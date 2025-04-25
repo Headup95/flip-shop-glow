@@ -8,9 +8,9 @@ const HeroSection = () => {
     <div className="relative min-h-[600px] bg-gradient-to-r from-yellow-400 to-yellow-300 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/644e95de-9299-4f05-abe4-dd1e584a39a7.png"
-          alt="Hero background"
-          className="w-full h-full object-cover"
+          src="/lovable-uploads/fa21ed82-9ca4-4c70-85a1-acf9101006e6.png"
+          alt="Fashion Collection"
+          className="w-full h-full object-cover opacity-90"
         />
       </div>
       

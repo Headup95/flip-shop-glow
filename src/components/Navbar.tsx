@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ShoppingCart, User, Search, Menu } from 'lucide-react';
 import { Input } from './ui/input';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,6 @@ const Navbar: React.FC = () => {
       <div className="bg-gradient-to-r from-yellow-400 to-yellow-300 py-2">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            {/* Top bar links */}
             <div className="hidden md:flex space-x-6 text-sm text-gray-700">
               <Link to="/" className="hover:text-gray-900">Start Gallery</Link>
               <Link to="/gift-cards" className="hover:text-gray-900">Gift Cards</Link>
@@ -37,6 +37,7 @@ const Navbar: React.FC = () => {
               <Link to="/today-deals" className="hover:text-gray-900">Today's Deals</Link>
               <Link to="/customer-service" className="hover:text-gray-900">Customer Service</Link>
             </div>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

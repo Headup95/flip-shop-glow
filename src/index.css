@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,36 @@
 
   body {
     @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .product-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300;
+  }
+
+  .product-card:hover {
+    @apply shadow-xl transform -translate-y-2;
+  }
+
+  .hover-link {
+    @apply relative inline-block text-navy;
+  }
+
+  .hover-link::after {
+    @apply content-[''] absolute w-full h-0.5 bg-teal left-0 bottom-0 scale-x-0 transition-transform duration-300 origin-bottom-right;
+  }
+
+  .hover-link:hover::after {
+    @apply scale-x-100 origin-bottom-left;
+  }
+
+  .transparent-navbar {
+    @apply fixed top-0 left-0 w-full z-50 transition-all duration-300;
+  }
+
+  .transparent-navbar.scrolled {
+    @apply bg-white/90 backdrop-blur-sm shadow-md;
   }
 }

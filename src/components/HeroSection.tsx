@@ -1,4 +1,3 @@
-
 import React from 'react';
 import FlipSign from './FlipSign';
 import { Button } from './ui/button';
@@ -8,7 +7,7 @@ const HeroSection = () => {
     <div className="relative min-h-[600px] bg-gradient-to-r from-yellow-400 to-yellow-300 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/fa21ed82-9ca4-4c70-85a1-acf9101006e6.png"
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
           alt="Fashion Collection"
           className="w-full h-full object-cover opacity-90"
         />
@@ -36,8 +35,8 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-0 w-full bg-white py-4 text-center">
-        <h2 className="text-2xl font-semibold text-gray-800">Man & Woman Fashion</h2>
+      <div className="absolute bottom-0 w-full bg-white/90 backdrop-blur-sm py-4 text-center">
+        <h2 className="text-2xl font-playfair font-semibold text-gray-800">Man & Woman Fashion</h2>
       </div>
     </div>
   );
